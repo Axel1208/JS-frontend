@@ -8,34 +8,35 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="mb-4 text-center">Formulario</h1>
+<div class="container mt-5">
+    <h1 class="mb-4 text-center">Formulario</h1>
 
-        <form id="loginForm" action="">
-            
-            <div class="mb-3">
-                <label for="usuario" class="form-label">Usuario</label>
-                <input type="text" class="form-control" id="usuario" placeholder="Ingresa tu usuario">
-                <div id="mensaje" class="form-text text-danger"></div>
-            </div>
+    <form id="loginForm" action="">
+        <!-- Usuario -->
+        <div class="mb-3">
+            <label for="usuario" class="form-label">Usuario</label>
+            <input type="text" class="form-control" id="usuario" placeholder="Ingresa tu usuario">
+            <div id="mensajeUsuario" class="form-text text-danger"></div>
+        </div>
 
-        
-            <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
+        <!-- Contraseña -->
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <div class="input-group">
                 <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
-                <div id="mensajePassword" class="form-text text-danger"></div>
+                <button type="button" class="btn btn-outline-secondary" id="togglePassword">Mostrar</button>
             </div>
+            <div id="mensajePassword" class="form-text text-danger"></div>
+            <div id="contadorPassword" class="form-text text-muted">0 caracteres</div>
+        </div>
 
-        
+        <button type="button" class="btn btn-primary w-100" id="btnLogin">Iniciar Sesión</button>
+    </form>
+</div>
 
-            <button type="button" class="btn btn-primary w-100">Iniciar Sesión</button>
-
-        </form>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-    </script>
-    <script src="validacion.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+</script>
+<script src="validacion.js"></script>
 </body>
 </html>
